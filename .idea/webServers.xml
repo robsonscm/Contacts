@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="c8edf588-b6b2-49b9-96c3-73772171972b" name="MAMP" url="http://localhost/localStorage">
+        <fileTransfer port="0" mountedRoot="/Applications/MAMP/htdocs" accessType="MOUNT" />
+      </webServer>
+      <webServer id="788c63d0-74f6-40f0-af5c-8b8204a5fc5a" name="edumedia" url="http://stra0165.edumedia.ca">
+        <fileTransfer host="stra0165.edumedia.ca" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

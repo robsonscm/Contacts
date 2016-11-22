@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!---->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <!---->
+    <title>Contact Manager</title>
+    <!---->
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee|Nunito|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!---->
+</head>
+<body>
+    <!---->
+    <header>
+        <h1>Contact Manager</h1>
+    </header>
+    <!---->
+    <main>
+        <section class="overlay">
+        </section>
+        <form action="" autocomplete="on" id="input" class="contactform">
+            <header>
+                <h1>New Contact</h1>
+            </header>
+            <div class="formBox name">
+                <label for="firstName">First Name</label>
+                <input id="firstName" value="" placeholder="Enter your first name" maxlength="20" type="text" required/>
+            </div>
+            <div class="formBox name">
+                <label for="lastName">Last Name</label>
+                <input id="lastName" value="" placeholder="Enter your last name" maxlength="50" type="text"/>
+            </div>
+            <div class="formBox phone">
+                <label for="mobile">Mobile</label>
+                <input id="mobile" value="" placeholder="(999) 999-9999" type="tel" maxlength="10"/>
+            </div>
+            <div class="formBox phone">
+                <label for="phone">Phone</label>
+                <input id="phone" value="" placeholder="(999) 999-9999" type="tel" maxlength="10"/>
+            </div>
+            <div class="formBox email">
+                <label for="email">e-mail</label>
+                <input id="email" value="" placeholder="name@provider.ca" type="email" required/>
+            </div>
+            <div class="formBox button">
+                <div class="btnSave icon-user-check"></div>
+                <div class="btnCancel icon-blocked"></div>
+            </div>
+        </form>
+        <section id="output">
+        </section>
+    </main>
+    <!---->
+    <footer>
+        <div class="fab button icon-user-plus"></div>
+        <p>&copy;
+            <time datetime="2016">2016 </time>
+            Robson Miranda
+        </p>
+    </footer>
+    <!---->
+    <script src="./js/main.js"></script>
+</body>
+</html>

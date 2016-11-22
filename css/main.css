@@ -1,0 +1,254 @@
+@-webkit-keyframes OVERLAY {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-webkit-keyframes MODAL {
+    from { left: 0; }
+    to   { left: 50%; }
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+html{
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Nunito', 'Roboto', 'ABeeZee', sans-serif;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f1f1f1+50,e1e1e1+51,f6f6f6+100;White+Gloss+%231 */
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  rgba(255,255,255,1) 0%, rgba(241,241,241,1) 50%, rgba(225,225,225,1) 51%, rgba(246,246,246,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+header{
+    /*background-color: hsl(200, 30%, 50%);*/
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#959595+0,0d0d0d+46,010101+50,0a0a0a+53,4e4e4e+76,383838+87,1b1b1b+100;Black+Gloss+Pipe */
+    background: rgb(149,149,149); /* Old browsers */
+    background: -moz-linear-gradient(45deg,  rgba(149,149,149,1) 0%, rgba(13,13,13,1) 46%, rgba(1,1,1,1) 50%, rgba(10,10,10,1) 53%, rgba(78,78,78,1) 76%, rgba(56,56,56,1) 87%, rgba(27,27,27,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  rgba(149,149,149,1) 0%,rgba(13,13,13,1) 46%,rgba(1,1,1,1) 50%,rgba(10,10,10,1) 53%,rgba(78,78,78,1) 76%,rgba(56,56,56,1) 87%,rgba(27,27,27,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  rgba(149,149,149,1) 0%,rgba(13,13,13,1) 46%,rgba(1,1,1,1) 50%,rgba(10,10,10,1) 53%,rgba(78,78,78,1) 76%,rgba(56,56,56,1) 87%,rgba(27,27,27,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', endColorstr='#1b1b1b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    color: #fff;
+}
+header h1{
+    font-size: 3rem;
+    line-height: 5rem;
+    height: 5rem;
+    text-align: center;
+    text-shadow:1px 1px 1px hsl(0, 100%, 100%),
+    -1px -1px 1px hsl(0, 0%, 0%);
+    overflow: hidden;
+}
+.button,
+.button:hover{
+    cursor: pointer;
+}
+.contacts{
+    width: 70%;
+    min-width: 320px;
+    border:1px solid #aaa;
+    list-style:none;
+    margin: 1rem auto 5rem auto;
+    border-radius: 3px;
+}
+.contact{
+    height: 8rem;
+    border-bottom: 1px solid #e4e4e4;
+    position:relative;
+}
+.contact:hover{
+    background-color: #f4f4f4;
+}
+.contact .delete,
+.contact .edit{
+    float:right;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(133,29,28, 0.8);
+    text-align:center;
+    font-size: 3.5rem;
+    display:block;
+    border-radius: 50%;
+    position: absolute;
+    top: 15%;
+    right: 100px;
+    padding-top: .8rem;
+    box-shadow: 2px 2px 8px hsl(0, 0%, 0%);
+}
+.contact .edit{
+    margin-left: .1rem;
+    background-color: #4570AD;
+    right: 10px;
+    font-size: 3.2rem;
+}
+.contact .delete:hover,
+.contact .delete:active,
+.contactform .btnCancel:hover,
+.contactform .btnCancel:active{
+    background-color: #FF3737;
+}
+.contact .edit:hover{
+    background-color: dodgerblue;
+}
+.contact h3{
+    color: #333;
+    line-height: 3.0rem;
+    font-size: 2.0rem;
+    padding: 0 2rem;
+}
+.contact:hover h3{
+    text-shadow: 2px 2px 0 #fff, 0 0 5px #FF3737, 0 0 5px #FF3737;
+}
+.contact p{
+    color: #666;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    padding: 0 3rem;
+    vertical-align: top;
+}
+.fab{
+    background-color: #25C7BC; /*hsl(354, 40%, 70%);*/
+    font-size: 3.5rem;
+    text-align: center;
+    padding-top: .8rem;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    box-shadow: 2px 2px 8px hsl(0, 0%, 0%);
+}
+.fab:hover,
+.fab:active,
+.btnSave:hover,
+.btnSave:active{
+    background-color: #30FFF1; /*hsl(354, 50%, 60%);*/
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: hsla(0, 0%, 0%, 0.7);
+    position:fixed;
+    z-index: 100;
+    -webkit-animation: OVERLAY 2s 1; /* Safari 4+ */
+    -moz-animation:    OVERLAY 2s 1; /* Fx 5+ */
+    -o-animation:      OVERLAY 2s 1; /* Opera 12+ */
+    animation:         OVERLAY 2s 1; /* IE 10+, Fx 29+ */
+}
+.contactform{
+    width: 56vw;
+    height: 56vh;
+    min-width: 336px;
+    min-height: 495px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -28vh;
+    margin-left: -28vw;
+    background-color: #f4f4f4;
+    box-shadow: 2px 2px 12px hsl(0, 0%, 0%);
+    z-index: 200;
+    line-height: 1.5rem;
+    animation: MODAL .5s steps(20) 1 alternate;
+}
+    .formBox {
+        padding: .5rem 0 .5rem 1rem;
+        width: 49%;
+        display: inline-block;
+        /*border: 1px solid blue;*/
+    }
+        .formBox>label {
+            display: block;
+            clear: both;
+            font-size: 110%;
+        }
+        .formBox>input{
+            font-size: 1.5rem;
+            width: 90%;
+            min-width: 90%;
+            border-radius: 5px;
+            padding: .3rem;
+        }
+        .formBox.button{
+            /*border: solid red 1px;*/
+            display: block;
+            width: 256px;
+            margin: 0 auto;
+        }
+        .btnSave,
+        .btnCancel{
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            box-shadow: 2px 2px 12px #666666;
+            font-size: 3.5rem;
+            text-align: center;
+            padding-top: .8rem;
+            background-color: #25C7BC;
+            margin: auto 1rem;
+        }
+        .btnSave.icon-user-check {
+            background-color: #4570AD;
+        }
+            .btnSave.icon-user-check:hover {
+                background-color: dodgerblue;
+            }
+        .btnCancel {
+            background-color: rgba(133,29,28, 0.8);
+        }
+/* The alert message box */
+.errBox {
+    padding: 20px;
+    background-color: transparent;
+    color: white;
+    margin-bottom: 15px;
+    display: none;
+    transition: background-color 2s ease-in;
+}
+.errBox.active {
+    display: block;
+    background-color: #f44336; /* Red */
+}
+/* The close button */
+.closebtn  {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 2rem;
+    line-height: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+}
+footer p {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    background-color: transparent;
+}
+.required {
+    box-shadow: 0 0 15px red;
+}
+.filled {
+    box-shadow: 0 0 15px green;
+}
